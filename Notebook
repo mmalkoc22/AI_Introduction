@@ -1,0 +1,17 @@
+# I want to use here as a notebook for the things I learned during my AI journey so lets started
+
+scaler = StandardScaler()
+
+# Fit and transform the data
+scaled_data = scaler.fit_transform(df_train)
+scaled_data_test = scaler.fit_transform(df_test)
+
+
+# Convert the scaled data back to a DataFrame
+scaled_df = pd.DataFrame(scaled_data, columns=df_train.columns)
+scaled_df_test = pd.DataFrame(scaled_data, columns=df_test.columns
+
+
+#Scaling your data important It makes values more trainable
+
+#Dropout could make your NN not memorize the data points
